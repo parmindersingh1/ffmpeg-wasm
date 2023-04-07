@@ -25,10 +25,10 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  /* display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100vh; */
 }
 
 h1 {
@@ -66,4 +66,23 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.header ul {
+  display: flex;
+}
+.header a {
+ text-decoration: none;
+ padding: 5px 20px;
+}
+.header ul > li {
+  list-style: none;
+  border: 1px solid gray;
+  cursor: pointer;
+
+}
+
+.header ul > li > a.active {
+  background-color: gray;
+  color: white;
 }
